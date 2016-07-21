@@ -9,7 +9,8 @@ includes **php** web server + app (phpmyadmin), **mysql** server and **nginx** s
 ## test:
 * visit [`http://localhost:81/`](http://localhost:81/) and login with: myuser / mypass
 
-* run: `docker exec dockercomposelamp_mysql_1 ping -c2 nginx`
+* run: `docker exec dockercomposelamp_mysql_1 ping -c2 nginx` OR
+		`docker-compose exec mysql ping -c2 nginx`
 
   pings nginx container _from_ mysql, which you can see is not "linked" in docker-compose file.
 
