@@ -3,8 +3,8 @@ services:
   php:
 #  phpmyadmin:
      image: phpmyadmin/phpmyadmin
-     ports:
-       - "8080:80"
+#     ports:
+#       - "8080:80"
      links:
 #    map link alias:
        - mysql:db
